@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CURD.CSS">
+    <title>lern curd</title>
+</head>
+
+<body>
+
+
+    <section class="crud">
+
+        <div class="head">
+            <h2>CURD</h2>
+            <p>PRODUCT MANGMENT SYSTEM</p>
+        </div>
+
+
+
+        <div class="input">
+            <input type="text" placeholder="title" id="title">
+            <div class="price">
+                <input onkeyup="getTotal ()" type="number" placeholder="price" id="price">
+                <input onkeyup="getTotal ()" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="getTotal ()" type="number" placeholder="ads" id="adss">
+                <input onkeyup="getTotal ()" type="number" placeholder="discount" id="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="submet">create</button>
+        </div>
+
+
+
+
+        <div class="output">
+            <div class="searchblock">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button onclick="getSearchMood(this.id)" id="searchtitle">search by title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchcategory">search by category</button>
+                </div>
+
+                <div id="deleteALL">
+
+                </div>
+
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>TITLE</th>
+                        <th>PRICE</th>
+                        <th>TAXES</th>
+                        <th>ADS</th>
+                        <th>DISACOUNT</th>
+                        <th>TOTAL</th>
+                        <th>CATEGORY</th>
+                        <th>UPDATE</th>
+                        <th>DELETE</th>
+                    </tr>
+
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </section>
+
+    <button id="showPopup">Show Popup</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Welcome to the Popup!</h2>
+            <p>This is a simple popup example using HTML, CSS, and JavaScript.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="CURD.JS"></script>
+</body>
+
+</html>

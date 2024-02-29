@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Inter', sans-serif;
+}
+/*  اي حسوني هنا الهيدر و الايكون */
+.header {
+    width: 100%;
+    height: 745px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.icon h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.icon span {
+    color: red;
+    font-size: 20px;
+}
+/* هنا شنو هاي صفحة لونها رمادي  */
+.bg-one {
+    width: 100%;
+    height: 276px;
+    background-color: #4B5158;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-one h2 {
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    color:aliceblue;
+    margin-bottom: 170px;
+}
+/* هنا كارتات */
+.box {
+    background-color: #F6F6F8;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    top: 190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 190px;
+    width: 170px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: black;
+}
+
+.card h4 {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* هنا سي اس اس مالربط */
+#screen {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+#screen-PDF {
+    width: 680px;
+    height: 400px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#screen-PDF h1{
+    color: #5F83C6;
+    font-size: 37px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 324px;
+}
+
+.first-btn{
+    text-decoration: none;
+    background-color: aliceblue;
+    width: 300px;
+    height: 100px;
+    border-radius: 40px;
+    margin-left: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.first-text {
+    font-size: 28px;
+    font-weight: 500;
+    color: #5F83C6;
+    margin-left: 14px;
+
+}
+
+.first-btn:hover {
+    background-color: white;
+    border: 2px solid #5F83C6
+}
+
+.sec-btn {
+    width: 179px;
+    height: 55px;
+    background-color: #5F83C6;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 130px;
+    left: -236px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.sec-text {
+    font-size: 22px;
+    font-weight: 400;
+    color: black;
+}
+
+.sec-btn:hover {
+    background-color: white;
+    border: 2px solid #5F83C6
+}
+
+/* هاي هنا الفوتر */
+
+.footer-frontend {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo-frontend h1 {
+    font-size: 40px;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.footer-logo-frontend span {
+    font-size: 40px;
+    font-weight: 200;
+    color: red;
+}
